@@ -17,3 +17,8 @@ SELECT name, country FROM learn_postgresql.cities;
 
 SELECT area, name, population  FROM learn_postgresql.cities;
 SELECT name, name, name  FROM learn_postgresql.cities;
+
+SELECT name, population / area as population_per_area FROM learn_postgresql.cities;
+SELECT name, population + area as population_per_area FROM learn_postgresql.cities;
+SELECT name, population * area as population_per_area FROM learn_postgresql.cities;
+
