@@ -22,3 +22,4 @@ SELECT name, population / area as population_per_area FROM learn_postgresql.citi
 SELECT name, population + area as population_per_area FROM learn_postgresql.cities;
 SELECT name, population * area as population_per_area FROM learn_postgresql.cities;
 
+
