@@ -22,4 +22,25 @@ SELECT name, population / area as population_per_area FROM learn_postgresql.citi
 SELECT name, population + area as population_per_area FROM learn_postgresql.cities;
 SELECT name, population * area as population_per_area FROM learn_postgresql.cities;
 
+SELECT name || country FROM cities;
+
+SELECT name || ', ' || country FROM cities;
+
+SELECT name || ', ' || country AS location FROM cities;
+
+SELECT CONCAT(name, country) AS location FROM cities;
+
+SELECT CONCAT(name, ', ', country) AS location FROM cities;
+
+SELECT
+    CONCAT(UPPER(name), ', ', UPPER(country)) AS location
+FROM
+    cities;
+
+SELECT
+    UPPER(CONCAT(name, ', ', country)) AS location
+FROM
+    cities;
+
+SELECT name, area FROM cities WHERE area > 4000;
 
