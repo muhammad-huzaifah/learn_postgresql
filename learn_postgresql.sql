@@ -58,3 +58,12 @@ SELECT name, area FROM cities WHERE area NOT IN (3043, 8223);
 
 SELECT name, area FROM cities WHERE area NOT IN (3043, 8223) OR name = 'Delhi' OR name = 'Tokyo';
 
+SELECT
+    name,
+    population / area AS population_density
+FROM
+    learn_postgresql.cities
+WHERE population / area > 6000;
+
+
+
